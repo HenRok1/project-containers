@@ -7,7 +7,7 @@
 #include <list>
 
 namespace s21 {
-    template <typename T, typename Constainer = std::list<T>>
+    template <typename T, typename Container = std::list<T>>
     class Stack {
         /* Поля и конструкторы */
         public:
