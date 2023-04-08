@@ -62,29 +62,29 @@ namespace s21 {
                 return container_.size();
             }
 
-            /*push - добавление элемента в вершину Stack */
+            /* push - добавление элемента в вершину Stack */
             void push(const value_type& value) {
                 container_.push_back(value);
             }
 
-            /*push - добавление элемента в вершину Stack */
+            /* push - добавление элемента в вершину Stack */
             void push(value_type&& value) {
                 container_.push_back(std::move(value));
             }
 
-            /*pop - удаление элемента, находящийся в вершине Stack*/
+            /* pop - удаление элемента, находящийся в вершине Stack*/
             void pop() noexcept {
                 container_.pop_back();
             }
 
-            /*swap - изменений позиций двух элементов между собою*/
+            /* swap - изменений позиций двух элементов между собою*/
             void swap(stack& other) noexcept
                 std::swap(container_, other.container_);
 
-            /*нихуа непонятно что это*/
+            /* помещает элемент в вершину Stack, без копирования и перемещения*/
             template <typename... Args>
             decltype(auto) emplace(Args&&... args) {
-                return container.emplace_back(std::forward<Args>(args)...);
+                return container_.emplace_back(std::forward<Args>(args)...);
             }
 
         private:
