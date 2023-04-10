@@ -19,6 +19,7 @@
         "string": "cpp",
         "iterator": "cpp",
         "algorithm": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "__split_buffer": "cpp"
     }
 }
