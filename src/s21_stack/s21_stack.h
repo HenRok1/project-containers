@@ -4,10 +4,10 @@
 #include <iostream>
 #include <algorithm>
 #include <initializer_list>
-#include <list>
 
+#include "../s21_list/s21_list.h"
 namespace s21 {
-    template <typename T, typename Container = std::list<T>>
+    template <typename T, typename Container = s21::List<T>>
     class Stack {
         /* Поля и конструкторы */
         public:
